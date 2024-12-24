@@ -1,0 +1,55 @@
+.container {
+  /* position: absolute; */
+  border: 1px solid #282c34;
+  padding-inline: 3%;
+  padding-block: 1%;
+  margin: 8px;
+  border-radius: 8%;
+  width: 25%;
+  min-height: 200px;
+  transition: padding 0.5s, transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+  z-index: 1; /* Set the default z-index */
+}
+
+.container:hover {
+  background-color: rgb(240, 233, 233);
+  padding-inline: 4%;
+  transform: scale(1.05) translateY(-10px); /* Scale up and move the card upwards */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
+  z-index: 10; /* Bring the card to the front */
+}
+
+.search-bar {
+  margin: 20px 0;
+  margin-bottom: 0;
+  padding: 10px;
+  margin-left: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+}
+
+.dropdown {
+  overflow-y: scroll;
+  max-height: 20vh;
+  background-color: #dedede;
+  border: 1px solid #fcfcfc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.dropdown-item {
+  margin: 1%;
+  cursor: pointer;
+}
